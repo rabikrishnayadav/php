@@ -168,7 +168,7 @@
 					$mod = $num1 % $num2;
 					echo "The Modulus of two Number is: $mod.";
 					?>
-				</ul>
+				</ul><br><hr>
 				<h6>Find the power of number</h6>
 				Example:<br>
 				$base = 5;<br>
@@ -182,7 +182,61 @@
 				$powerOfNumber = pow(5,2);
 				echo $powerOfNumber;
 				?>
-
+				<br><br>
+				<h5>Find the Area Of</h5>
+				<ul>
+					<li>Circle</li>
+					Formula: pi*r2<br>
+					Example:<br>
+					$pi = 3.141;<br>
+					$r = 5;<br>
+					$areaOfCircle = $pi*pow($r,2);<br>
+					echo $powerOfNumber;<br>
+					<kbd>Result:</kbd>
+					<?php
+					$pi = 3.141;
+					$r = 5;
+					$areaOfCircle = $pi*pow($r,2);
+					echo $areaOfCircle;
+					?>
+					<li>Triangle</li>Formula = (1/2)bh<br>
+					Example:<br>
+					$h = 5;<br>
+					$b = 3;<br>
+					$areaOfTriangle = (1/2)*$h*$b;<br>
+					echo $areaOfTriangle;<br>
+					<kbd>Result:</kbd>
+					<?php
+					$h = 5;
+					$b = 3;
+					$areaOfTriangle = (1/2)*$h*$b;
+					echo $areaOfTriangle;
+					?>
+					<li>Square</li>Formula = a*a<br>
+					Example:<br>
+					$a = 5;<br>
+					$areaOfSquare = pow($a,2);<br>
+					echo $areaOfSquare;<br>
+					<kbd>Result:</kbd>
+					<?php
+					$a = 5;
+					$areaOfSquare = pow($a,2);
+					echo $areaOfSquare;
+					?>
+					<li>Rectangle</li>Formula = l*w<br>
+					Example:<br>
+					$l = 5;<br>
+					$w = 3;<br>
+					$areaOfRectangle =$l * $w;<br>
+					echo $areaOfRectangle;<br>
+					<kbd>Result:</kbd>
+					<?php
+					$l = 5;
+					$w = 3;
+					$areaOfRectangle = $l * $w;
+					echo $areaOfRectangle;
+					?>
+				</ul>
 			</div>
 		</div>
 	</body>
