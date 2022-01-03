@@ -177,341 +177,341 @@
 					?>
 				</ul>
 				<br>
-			<div>
-				<h3>Concatenation Operator</h3>
-				The php concatenation operator(.) is used to combine two string values to create one string<br>
-				Example 1:<br>
-				<code>
-				$firstName = 'Rabi';<br>
-				$middleName = 'krishna';<br>
-				$lastName = 'yadav';<br>
-				echo 'My first name is '.$firstName. ' and middle name is '.$middleName. ' and last name is '.$lastName;<br>
-				</code><br>
-				<kbd>Result:</kbd>
-				<?php
-				$firstName = 'Rabi';
-				$middleName = 'krishna';
-				$lastName = 'yadav';
-				echo 'My first name is '.$firstName. ' and middle name is '.$middleName. ' and last name is '.$lastName;
-				?><br><br>
-				Example 2:<br>
-				<code>
-				$name = 'rabi';<br>
-				$name .= 'krishna';<br>
-				$name .= 'yadav';<br>
-				echo $name;	<br>
-				</code><br>
-				<kbd>Result:</kbd>
-				<?php
-				$name = 'rabi';
-				$name .= 'krishna';
-				$name .= 'yadav';
-				echo $name;
-				?>
-			</div><br>
-			<div>
-				<h3>Comparison Operator</h3>
-				Comparisono operators, as their name implies, allow you to compare two values.<br>
-				<ul>
-					<li>$a == $b(equal)</li>TRUE if $a is equal to $b.<br>
-					Example:<br>
+				<div>
+					<h3>Concatenation Operator</h3>
+					The php concatenation operator(.) is used to combine two string values to create one string<br>
+					Example 1:<br>
 					<code>
-					$num1 = 5;<br>
-					$num2 = 5;<br>
-					if ($num1 == $num2) {<br>
+					$firstName = 'Rabi';<br>
+					$middleName = 'krishna';<br>
+					$lastName = 'yadav';<br>
+					echo 'My first name is '.$firstName. ' and middle name is '.$middleName. ' and last name is '.$lastName;<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$firstName = 'Rabi';
+					$middleName = 'krishna';
+					$lastName = 'yadav';
+					echo 'My first name is '.$firstName. ' and middle name is '.$middleName. ' and last name is '.$lastName;
+					?><br><br>
+					Example 2:<br>
+					<code>
+					$name = 'rabi';<br>
+					$name .= 'krishna';<br>
+					$name .= 'yadav';<br>
+					echo $name;	<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$name = 'rabi';
+					$name .= 'krishna';
+					$name .= 'yadav';
+					echo $name;
+					?>
+				</div><br>
+				<div>
+					<h3>Comparison Operator</h3>
+					Comparisono operators, as their name implies, allow you to compare two values.<br>
+					<ul>
+						<li>$a == $b(equal)</li>TRUE if $a is equal to $b.<br>
+						Example:<br>
+						<code>
+						$num1 = 5;<br>
+						$num2 = 5;<br>
+						if ($num1 == $num2) {<br>
 						echo $num1. ' is equal to ' .$num2;<br>
-					}	<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php
-					$num1 = 5;
-					$num2 = 5;
-					if ($num1 == $num2) {
-						echo $num1. ' is equal to ' .$num2;
-					}
-					?><br><br>
-					<li>$a != $b(Not equal)</li>TRUE if $a is not equal to $b.<br>
-					Example:<br>
-					<code>
-					$num1 = 5;<br>
-					$num2 = 15;<br>
-					if ($num1 != $num2) {<br>
+						}	<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$num1 = 5;
+						$num2 = 5;
+						if ($num1 == $num2) {
+							echo $num1. ' is equal to ' .$num2;
+						}
+						?><br><br>
+						<li>$a != $b(Not equal)</li>TRUE if $a is not equal to $b.<br>
+						Example:<br>
+						<code>
+						$num1 = 5;<br>
+						$num2 = 15;<br>
+						if ($num1 != $num2) {<br>
 						echo $num1. ' is not equal to ' .$num2;<br>
-					}	<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php
-					$num1 = 5;
-					$num2 = 15;
-					if ($num1 != $num2) {
-						echo $num1. ' is not equal to ' .$num2;
-					}
-					?><br><br>
-					<li>$a < $b(Less than)</li>TRUE if $a is strictly less than $b.
-					Example:<br>
-					<code>
-					$num1 = 5;<br>
-					$num2 = 15;<br>
-					if ($num1 < $num2) {<br>
+						}	<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$num1 = 5;
+						$num2 = 15;
+						if ($num1 != $num2) {
+							echo $num1. ' is not equal to ' .$num2;
+						}
+						?><br><br>
+						<li>$a < $b(Less than)</li>TRUE if $a is strictly less than $b.
+						Example:<br>
+						<code>
+						$num1 = 5;<br>
+						$num2 = 15;<br>
+						if ($num1 < $num2) {<br>
 						echo $num1. ' is not greater than ' .$num2;<br>
-					}	<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php
-					$num1 = 5;
-					$num2 = 15;
-					if ($num1 < $num2) {
-						echo $num1. ' is less than ' .$num2;
-					}else{
-						echo $num1. ' is greater than ' .$num2;
-					}
-					?><br><br>
-					<li>$a > $b(Greater than)</li>TRUE if $a is strictly greater than $b.<br>
-					Example:<br>
-					<code>
-					$num1 = 50;<br>
-					$num2 = 15;<br>
-					if ($num1 > $num2) {<br>
+						}	<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$num1 = 5;
+						$num2 = 15;
+						if ($num1 < $num2) {
+							echo $num1. ' is less than ' .$num2;
+						}else{
+							echo $num1. ' is greater than ' .$num2;
+						}
+						?><br><br>
+						<li>$a > $b(Greater than)</li>TRUE if $a is strictly greater than $b.<br>
+						Example:<br>
+						<code>
+						$num1 = 50;<br>
+						$num2 = 15;<br>
+						if ($num1 > $num2) {<br>
 						echo $num1. ' is greater than ' .$num2;<br>
 						echo $num1. ' is less than ' .$num2;<br>
-					}	<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php
-					$num1 = 50;
-					$num2 = 15;
-					if ($num1 > $num2) {
-						echo $num1. ' is greater than ' .$num2;
-					}else{
-						echo $num1. ' is less than ' .$num2;
-					}
-					?><br><br>
-					<li>$a <= $b</li>TRUE if $a is less than or equal to $b.<br>
-					Example:<br>
-					<code>
-					$num1 = 5;<br>
-					$num2 = 15;<br>
-					if ($num1 < $num2) {<br>
+						}	<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$num1 = 50;
+						$num2 = 15;
+						if ($num1 > $num2) {
+							echo $num1. ' is greater than ' .$num2;
+						}else{
+							echo $num1. ' is less than ' .$num2;
+						}
+						?><br><br>
+						<li>$a <= $b</li>TRUE if $a is less than or equal to $b.<br>
+						Example:<br>
+						<code>
+						$num1 = 5;<br>
+						$num2 = 15;<br>
+						if ($num1 < $num2) {<br>
 						echo $num1. ' is not greater than ' .$num2;<br>
-					}	<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php
-					$num1 = 5;
-					$num2 = 15;
-					if ($num1 < $num2) {
-						echo $num1. ' is less than ' .$num2;
-					}else{
-						echo $num1. ' is greater than ' .$num2;
-					}
-					?><br><br>
-					<li>$a >= $b</li>TRUE if $a is greater than or equal to $a.<br>
-					Example:<br>
-					<code>
-					$num1 = 50;<br>
-					$num2 = 15;<br>
-					if ($num1 >= $num2) {<br>
+						}	<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$num1 = 5;
+						$num2 = 15;
+						if ($num1 < $num2) {
+							echo $num1. ' is less than ' .$num2;
+						}else{
+							echo $num1. ' is greater than ' .$num2;
+						}
+						?><br><br>
+						<li>$a >= $b</li>TRUE if $a is greater than or equal to $a.<br>
+						Example:<br>
+						<code>
+						$num1 = 50;<br>
+						$num2 = 15;<br>
+						if ($num1 >= $num2) {<br>
 						echo $num1. ' is greater than ' .$num2;<br>
 						echo $num1. ' is less than ' .$num2;<br>
-					}	<br>
+						}	<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$num1 = 50;
+						$num2 = 15;
+						if ($num1 >= $num2) {
+							echo $num1. ' is greater than ' .$num2;
+						}else{
+							echo $num1. ' is less than ' .$num2;
+						}
+						?><br><br>
+					</ul>
+				</div><br>
+				<div>
+					<h3>Logical Operator</h3>
+					<ul>
+						<li>$a and $b(AND)</li>TRUE if both $a and $b are True.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						$b = 10;<br>
+						$c = 5;<br>
+						if ($a == $b and $a == $c) {<br>
+						echo 'true';<br>
+						}else{<br>
+						echo 'false';<br>
+						}<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						$b = 10;
+						$c = 5;
+						if ($a == $b and $a == $c) {
+							echo 'true';
+						}else{
+							echo 'false';
+						}
+						?><br><br>
+						<li>$a or $b(OR)</li>TRUE if either $a or $b is True.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						$b = 10;<br>
+						$c = 5;<br>
+						if ($a == $b or $a == $c) {<br>
+						echo 'true';<br>
+						}else{<br>
+						echo 'false';<br>
+						}<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						$b = 10;
+						$c = 5;
+						if ($a == $b or $a == $c) {
+							echo 'true';
+						}else{
+							echo 'false';
+						}
+						?><br><br>
+						<li>$a xor $b(XOR)</li>TRUE if either $a or $b is True, but not both.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						$b = 10;<br>
+						$c = 5;<br>
+						if ($a == $b xor $a == $c) {<br>
+						echo 'true';<br>
+						}else{<br>
+						echo 'false';<br>
+						}<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						$b = 10;
+						$c = 5;
+						if ($a == $b xor $a == $c) {
+							echo 'true';
+						}else{
+							echo 'false';
+						}
+						?><br><br>
+						<li>$a && $b(AND)</li>TRUE if both $a and $b are True.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						$b = 10;<br>
+						$c = 5;<br>
+						if ($a == $b && $a == $c) {<br>
+						echo 'true';<br>
+						}else{<br>
+						echo 'false';<br>
+						}<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						$b = 10;
+						$c = 5;
+						if ($a == $b && $a == $c) {
+							echo 'true';
+						}else{
+							echo 'false';
+						}
+						?><br><br>
+						<li>$a || $b(OR)</li>TRUE if either $a or $b is True.><br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						$b = 10;<br>
+						$c = 5;<br>
+						if ($a == $b || $a == $c) {<br>
+						echo 'true';<br>
+						}else{<br>
+						echo 'false';<br>
+						}<br>
+						</code><br>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						$b = 10;
+						$c = 5;
+						if ($a == $b || $a == $c) {
+							echo 'true';
+						}else{
+							echo 'false';
+						}
+						?><br><br>
+					</ul>
+				</div><br>
+				<div>
+					<h3>Ternary Operator</h3>
+					The ternary operator takes three operands, a condition, a result for true, and a result for false.<br>
+					Syntax: (condition) ? true value : false value;<br>
+					Example:<br>
+					<code>
+					$num = 5;<br>
+					echo ($num == 5) ? "Yes, It's equal to {$num}" : "Ooh No, It's not equal to {$num}";<br>
 					</code><br>
 					<kbd>Result:</kbd>
 					<?php
-					$num1 = 50;
-					$num2 = 15;
-					if ($num1 >= $num2) {
-						echo $num1. ' is greater than ' .$num2;
-					}else{
-						echo $num1. ' is less than ' .$num2;
-					}
-					?><br><br>
-				</ul>
-			</div><br>
-			<div>
-				<h3>Logical Operator</h3>
-				<ul>
-					<li>$a and $b(AND)</li>TRUE if both $a and $b are True.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					$b = 10;<br>
-					$c = 5;<br>
-					if ($a == $b and $a == $c) {<br>
-						echo 'true';<br>
-					}else{<br>
-						echo 'false';<br>
-					}<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php 
-					$a = 5;
-					$b = 10;
-					$c = 5;
-					if ($a == $b and $a == $c) {
-						echo 'true';
-					}else{
-						echo 'false';
-					}
-					?><br><br>
-					<li>$a or $b(OR)</li>TRUE if either $a or $b is True.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					$b = 10;<br>
-					$c = 5;<br>
-					if ($a == $b or $a == $c) {<br>
-						echo 'true';<br>
-					}else{<br>
-						echo 'false';<br>
-					}<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php 
-					$a = 5;
-					$b = 10;
-					$c = 5;
-					if ($a == $b or $a == $c) {
-						echo 'true';
-					}else{
-						echo 'false';
-					}
-					?><br><br>
-					<li>$a xor $b(XOR)</li>TRUE if either $a or $b is True, but not both.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					$b = 10;<br>
-					$c = 5;<br>
-					if ($a == $b xor $a == $c) {<br>
-						echo 'true';<br>
-					}else{<br>
-						echo 'false';<br>
-					}<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php 
-					$a = 5;
-					$b = 10;
-					$c = 5;
-					if ($a == $b xor $a == $c) {
-						echo 'true';
-					}else{
-						echo 'false';
-					}
-					?><br><br>
-					<li>$a && $b(AND)</li>TRUE if both $a and $b are True.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					$b = 10;<br>
-					$c = 5;<br>
-					if ($a == $b && $a == $c) {<br>
-						echo 'true';<br>
-					}else{<br>
-						echo 'false';<br>
-					}<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php 
-					$a = 5;
-					$b = 10;
-					$c = 5;
-					if ($a == $b && $a == $c) {
-						echo 'true';
-					}else{
-						echo 'false';
-					}
-					?><br><br>
-					<li>$a || $b(OR)</li>TRUE if either $a or $b is True.><br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					$b = 10;<br>
-					$c = 5;<br>
-					if ($a == $b || $a == $c) {<br>
-						echo 'true';<br>
-					}else{<br>
-						echo 'false';<br>
-					}<br>
-					</code><br>
-					<kbd>Result:</kbd>
-					<?php 
-					$a = 5;
-					$b = 10;
-					$c = 5;
-					if ($a == $b || $a == $c) {
-						echo 'true';
-					}else{
-						echo 'false';
-					}
-					?><br><br>
-				</ul>
-			</div><br>
-			<div>
-				<h3>Ternary Operator</h3>
-				The ternary operator takes three operands, a condition, a result for true, and a result for false.<br>
-				Syntax: (condition) ? true value : false value;<br>
-				Example:<br>
-				<code>
-				$num = 5;<br>
-				echo ($num == 5) ? "Yes, It's equal to {$num}" : "Ooh No, It's not equal to {$num}";<br>	
-				</code><br>
-				<kbd>Result:</kbd>
-				<?php
-				$num = 5;
-				echo ($num == 5) ? "Yes, It's equal to {$num}" : "Ooh No, It's not equal to {$num}";
-				?><br>
-			</div><br>
-			<div>
-				<h3>Increment & Decrement Operator</h3>
-				PHP supports C-style pre- and post- increment and decrement operators.
-				<ul>
-					<li>++$a(Pre-increment)</li>Increments $a by one, then return $a.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					echo ++$a;<br>	
-					</code>
-					<kbd>Result:</kbd>
-					<?php
-					$a = 5;
-					echo ++$a;
-					?><br><br>
-					<li>$a++(Post-increment)</li>Return $a, then increments $a by one.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					echo $a++;<br>	
-					</code>
-					<kbd>Result:</kbd>
-					<?php
-					$a = 5;
-					echo $a++;
-					?><br><br>
-					<li>--$a(pre-decrement)</li>Decrements $a by one, then return $a.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					echo --$a;<br>	
-					</code>
-					<kbd>Result:</kbd>
-					<?php
-					$a = 5;
-					echo --$a;
-					?><br><br>
-					<li>$a--(post-decrement)</li>Return $a, then decrement $a by one.<br>
-					Example:<br>
-					<code>
-					$a = 5;<br>
-					echo $a--;<br>	
-					</code>
-					<kbd>Result:</kbd>
-					<?php
-					$a = 5;
-					echo $a--;
-					?><br><br>
-				</ul>
-			</div><br>
+					$num = 5;
+					echo ($num == 5) ? "Yes, It's equal to {$num}" : "Ooh No, It's not equal to {$num}";
+					?><br>
+				</div><br>
+				<div>
+					<h3>Increment & Decrement Operator</h3>
+					PHP supports C-style pre- and post- increment and decrement operators.
+					<ul>
+						<li>++$a(Pre-increment)</li>Increments $a by one, then return $a.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						echo ++$a;<br>
+						</code>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						echo ++$a;
+						?><br><br>
+						<li>$a++(Post-increment)</li>Return $a, then increments $a by one.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						echo $a++;<br>
+						</code>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						echo $a++;
+						?><br><br>
+						<li>--$a(pre-decrement)</li>Decrements $a by one, then return $a.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						echo --$a;<br>
+						</code>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						echo --$a;
+						?><br><br>
+						<li>$a--(post-decrement)</li>Return $a, then decrement $a by one.<br>
+						Example:<br>
+						<code>
+						$a = 5;<br>
+						echo $a--;<br>
+						</code>
+						<kbd>Result:</kbd>
+						<?php
+						$a = 5;
+						echo $a--;
+						?><br><br>
+					</ul>
+				</div><br>
 			</div><br><hr>
 			<div>
 				<h6>Find the power of number</h6>
@@ -593,7 +593,7 @@
 				$name = 'rabi';
 				echo 'my name is rabi' // this is perfect
 				//eho 'my name is $name' "it's not show the output"
-						// echo 'my name in single quotes \'rabi\' ';	 // like this we can use single quotes
+							// echo 'my name in single quotes \'rabi\' ';	 // like this we can use single quotes
 				?>
 				<li>Double Quotes(" ")</li>
 				Double quotes allow you to use \n,\r and \t and variables.<br>
@@ -688,26 +688,26 @@
 					The switch statement is used to perform different actions based on different conditions.<br>
 					Syntax:<br>
 					switch (variable) {<br>
-						case 'value':<br>
-							// code...<br>
-							break;	<br>
-						default:<br>
-							// code...<br>
+					case 'value':<br>
+					// code...<br>
+					break;	<br>
+					default:<br>
+					// code...<br>
 					}<br>
 					Example:<br>
 					<code>
 					$favColor = "green";<br>
 					switch ($favColor) {<br>
-						case 'red':<br>
-							echo 'Fav color is red';<br>
-							break;<br>
-						case 'green':<br>
-							echo 'fav color is green';<br>
-							break;<br>
-						case 'blue':<br>
-							echo 'fav color is blue';<br>
-							break;<br>
-						default: echo 'Sorry, did not match color';<br>
+					case 'red':<br>
+					echo 'Fav color is red';<br>
+					break;<br>
+					case 'green':<br>
+					echo 'fav color is green';<br>
+					break;<br>
+					case 'blue':<br>
+					echo 'fav color is blue';<br>
+					break;<br>
+					default: echo 'Sorry, did not match color';<br>
 					}<br>
 					</code><br>
 					<kbd>Result:</kbd>
@@ -727,6 +727,32 @@
 					}
 					?>
 				</ul>
+			</div><br><hr><br>
+			<div>
+				<h3>Dynamic HTML</h3>
+				<form method="POST">
+					Enter r,g,b full Color Name:<input type="text" name="colorname">
+					<input type="submit" name="submit" value="Check Now" class="btn btn-success">
+				</form>
+				<p>
+					<?php
+					if (isset($_POST['submit'])) {
+						$colorName = $_POST['colorname'];
+						switch ($colorName) {
+						case 'red':
+							echo 'Fav color is red';
+							break;
+						case 'green':
+							echo 'fav color is green';
+							break;
+						case 'blue':
+							echo 'fav color is blue';
+							break;
+						default: echo 'Sorry, did not match color';
+					}
+					}
+					?>
+				</p>
 			</div><br><hr><br>
 		</div>
 	</body>
