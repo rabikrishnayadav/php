@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>php</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<style type="text/css">
+			kbd{
+				color: white;
+				background-color: green;
+			}
+		</style>
 	</head>
 	<body>
 		<h1 class="text-center text-success">Learn PHP</h1><hr>
@@ -99,8 +105,9 @@
 					echo $friends[0];
 					?>
 				</ul>
-			</div>
+			</div><br><hr><br>
 			<div>
+				<h2 align="center">Operators in PHP</h2>
 				<h3>Arithmatic Operator</h3>
 				<ul>
 					<li>Addition</li>
@@ -168,7 +175,42 @@
 					$mod = $num1 % $num2;
 					echo "The Modulus of two Number is: $mod.";
 					?>
-				</ul><br><hr>
+				</ul>
+				<br>
+				<div>
+				<h3>Concatenation Operator</h3>
+				The php concatenation operator(.) is used to combine two string values to create one string<br>
+				Example 1:<br>
+				<code>
+				$firstName = 'Rabi';<br>
+				$middleName = 'krishna';<br>
+				$lastName = 'yadav';<br>
+				echo 'My first name is '.$firstName. ' and middle name is '.$middleName. ' and last name is '.$lastName;<br>
+				</code><br>
+				<kbd>Result:</kbd>
+				<?php
+				$firstName = 'Rabi';
+				$middleName = 'krishna';
+				$lastName = 'yadav';
+				echo 'My first name is '.$firstName. ' and middle name is '.$middleName. ' and last name is '.$lastName;
+				?><br><br>
+				Example 2:<br>
+				<code>
+				$name = 'rabi';<br>
+				$name .= 'krishna';<br>
+				$name .= 'yadav';<br>
+				echo $name;	<br>
+				</code><br>
+				<kbd>Result:</kbd>
+				<?php
+				$name = 'rabi';
+				$name .= 'krishna';
+				$name .= 'yadav';
+				echo $name;
+				?>
+				</div>
+			</div><br><hr>
+			<div>
 				<h6>Find the power of number</h6>
 				Example:<br>
 				$base = 5;<br>
