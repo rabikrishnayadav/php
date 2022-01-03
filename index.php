@@ -64,6 +64,42 @@
 				echo $sub;
 				?>
 			</div>
+			<div>
+				<h4>Data Types in PHP</h4>
+				<ul>
+					<li>Integer</li>
+					Example:
+					<?php
+					$num = 98;
+					echo $num;
+					echo '<br>';
+					?>
+					<li>String</li>
+					Example:
+					<?php
+					$name = "Rabi Kr Yadav";
+					echo "My name is $name.";
+					echo "<br>";
+					?>
+					<li>Float</li>
+					Example:
+					<?php
+					$num = 98.156;
+					echo $num;
+					echo '<br>';
+					?>
+					<li>Boolean</li>
+					A boolean represents two possible states: TRUE or FALSE.<br>
+					Where TRUE = 1; or FALSE = 0;<br>
+					<li>Array</li>
+					Example: $friends = array('ram','laxman','bharat','satrudhan');<br>echo $friends[0];<br>
+					Result:
+					<?php
+					$friends = array('ram','laxman','bharat','satrudhan');
+					echo $friends[0];
+					?>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
