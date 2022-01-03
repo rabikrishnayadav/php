@@ -326,6 +326,126 @@
 					}
 					?><br><br>
 				</ul>
+			</div><br>
+			<div>
+				<h3>Logical Operator</h3>
+				<ul>
+					<li>$a and $b(AND)</li>TRUE if both $a and $b are True.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					$b = 10;<br>
+					$c = 5;<br>
+					if ($a == $b and $a == $c) {<br>
+						echo 'true';<br>
+					}else{<br>
+						echo 'false';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$a = 5;
+					$b = 10;
+					$c = 5;
+					if ($a == $b and $a == $c) {
+						echo 'true';
+					}else{
+						echo 'false';
+					}
+					?><br><br>
+					<li>$a or $b(OR)</li>TRUE if either $a or $b is True.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					$b = 10;<br>
+					$c = 5;<br>
+					if ($a == $b or $a == $c) {<br>
+						echo 'true';<br>
+					}else{<br>
+						echo 'false';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$a = 5;
+					$b = 10;
+					$c = 5;
+					if ($a == $b or $a == $c) {
+						echo 'true';
+					}else{
+						echo 'false';
+					}
+					?><br><br>
+					<li>$a xor $b(XOR)</li>TRUE if either $a or $b is True, but not both.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					$b = 10;<br>
+					$c = 5;<br>
+					if ($a == $b xor $a == $c) {<br>
+						echo 'true';<br>
+					}else{<br>
+						echo 'false';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$a = 5;
+					$b = 10;
+					$c = 5;
+					if ($a == $b xor $a == $c) {
+						echo 'true';
+					}else{
+						echo 'false';
+					}
+					?><br><br>
+					<li>$a && $b(AND)</li>TRUE if both $a and $b are True.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					$b = 10;<br>
+					$c = 5;<br>
+					if ($a == $b && $a == $c) {<br>
+						echo 'true';<br>
+					}else{<br>
+						echo 'false';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$a = 5;
+					$b = 10;
+					$c = 5;
+					if ($a == $b && $a == $c) {
+						echo 'true';
+					}else{
+						echo 'false';
+					}
+					?><br><br>
+					<li>$a || $b(OR)</li>TRUE if either $a or $b is True.><br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					$b = 10;<br>
+					$c = 5;<br>
+					if ($a == $b || $a == $c) {<br>
+						echo 'true';<br>
+					}else{<br>
+						echo 'false';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$a = 5;
+					$b = 10;
+					$c = 5;
+					if ($a == $b || $a == $c) {
+						echo 'true';
+					}else{
+						echo 'false';
+					}
+					?><br><br>
+				</ul>
 			</div>
 			</div><br><hr>
 			<div>
