@@ -100,6 +100,63 @@
 					?>
 				</ul>
 			</div>
+			<div>
+				<h3>Arithmatic Operator</h3>
+				<ul>
+					<li>Addition</li>
+					Example:<br>
+					$num1 = 18;<br>
+					$num2 = 6;<br>
+					$sum = $num1 + $num2;<br>
+					echo "The Addition of Two Number is: $sum.";<br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 18;
+					$num2 = 6;
+					$sum = $num1 + $num2;
+					echo "The Addition of two Number is: $sum.";
+					?>
+					<li>Substraction</li>
+					Example:<br>
+					$num1 = 18;<br>
+					$num2 = 6;<br>
+					$sub = $num1 - $num2;<br>
+					echo "The Subtraction of Two Number is: $sub.";<br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 18;
+					$num2 = 6;
+					$sub = $num1 - $num2;
+					echo "The Subtraction of two Number is: $sub.";
+					?>
+					<li>Multiplication</li>
+					Example:<br>
+					$num1 = 18;<br>
+					$num2 = 6;<br>
+					$mult = $num1 * $num2;<br>
+					echo "The Multiplication of Two Number is: $mult.";<br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 18;
+					$num2 = 6;
+					$mult = $num1 * $num2;
+					echo "The Multiplication of two Number is: $mult.";
+					?>
+					<li>Division</li>
+					Example:<br>
+					$num1 = 18;<br>
+					$num2 = 6;<br>
+					$div = $num1 / $num2;<br>
+					echo "The Division of Two Number is: $div.";<br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 18;
+					$num2 = 6;
+					$div = $num1 / $num2;
+					echo "The Division of two Number is: $div.";
+					?>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
