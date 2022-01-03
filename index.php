@@ -155,6 +155,19 @@
 					$div = $num1 / $num2;
 					echo "The Division of two Number is: $div.";
 					?>
+					<li>Modulus</li>
+					Example:<br>
+					$num1 = 18;<br>
+					$num2 = 6;<br>
+					$mod = $num1 % $num2;<br>
+					echo "The Modulus of Two Number is: $mod.";<br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 18;
+					$num2 = 6;
+					$mod = $num1 % $num2;
+					echo "The Modulus of two Number is: $mod.";
+					?>
 				</ul>
 			</div>
 		</div>
