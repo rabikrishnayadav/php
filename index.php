@@ -446,6 +446,21 @@
 					}
 					?><br><br>
 				</ul>
+			</div><br>
+			<div>
+				<h3>Ternary Operator</h3>
+				The ternary operator takes three operands, a condition, a result for true, and a result for false.<br>
+				Syntax: (condition) ? true value : false value;<br>
+				Example:<br>
+				<code>
+				$num = 5;<br>
+				echo ($num == 5) ? "Yes, It's equal to {$num}" : "Ooh No, It's not equal to {$num}";<br>	
+				</code><br>
+				<kbd>Result:</kbd>
+				<?php
+				$num = 5;
+				echo ($num == 5) ? "Yes, It's equal to {$num}" : "Ooh No, It's not equal to {$num}";
+				?><br><br>
 			</div>
 			</div><br><hr>
 			<div>
