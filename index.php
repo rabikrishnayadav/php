@@ -177,7 +177,7 @@
 					?>
 				</ul>
 				<br>
-				<div>
+			<div>
 				<h3>Concatenation Operator</h3>
 				The php concatenation operator(.) is used to combine two string values to create one string<br>
 				Example 1:<br>
@@ -208,7 +208,125 @@
 				$name .= 'yadav';
 				echo $name;
 				?>
-				</div>
+			</div><br>
+			<div>
+				<h3>Comparison Operator</h3>
+				Comparisono operators, as their name implies, allow you to compare two values.<br>
+				<ul>
+					<li>$a == $b(equal)</li>TRUE if $a is equal to $b.<br>
+					Example:<br>
+					<code>
+					$num1 = 5;<br>
+					$num2 = 5;<br>
+					if ($num1 == $num2) {<br>
+						echo $num1. ' is equal to ' .$num2;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 5;
+					$num2 = 5;
+					if ($num1 == $num2) {
+						echo $num1. ' is equal to ' .$num2;
+					}
+					?><br><br>
+					<li>$a != $b(Not equal)</li>TRUE if $a is not equal to $b.<br>
+					Example:<br>
+					<code>
+					$num1 = 5;<br>
+					$num2 = 15;<br>
+					if ($num1 != $num2) {<br>
+						echo $num1. ' is not equal to ' .$num2;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 5;
+					$num2 = 15;
+					if ($num1 != $num2) {
+						echo $num1. ' is not equal to ' .$num2;
+					}
+					?><br><br>
+					<li>$a < $b(Less than)</li>TRUE if $a is strictly less than $b.
+					Example:<br>
+					<code>
+					$num1 = 5;<br>
+					$num2 = 15;<br>
+					if ($num1 < $num2) {<br>
+						echo $num1. ' is not greater than ' .$num2;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 5;
+					$num2 = 15;
+					if ($num1 < $num2) {
+						echo $num1. ' is less than ' .$num2;
+					}else{
+						echo $num1. ' is greater than ' .$num2;
+					}
+					?><br><br>
+					<li>$a > $b(Greater than)</li>TRUE if $a is strictly greater than $b.<br>
+					Example:<br>
+					<code>
+					$num1 = 50;<br>
+					$num2 = 15;<br>
+					if ($num1 > $num2) {<br>
+						echo $num1. ' is greater than ' .$num2;<br>
+						echo $num1. ' is less than ' .$num2;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 50;
+					$num2 = 15;
+					if ($num1 > $num2) {
+						echo $num1. ' is greater than ' .$num2;
+					}else{
+						echo $num1. ' is less than ' .$num2;
+					}
+					?><br><br>
+					<li>$a <= $b</li>TRUE if $a is less than or equal to $b.<br>
+					Example:<br>
+					<code>
+					$num1 = 5;<br>
+					$num2 = 15;<br>
+					if ($num1 < $num2) {<br>
+						echo $num1. ' is not greater than ' .$num2;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 5;
+					$num2 = 15;
+					if ($num1 < $num2) {
+						echo $num1. ' is less than ' .$num2;
+					}else{
+						echo $num1. ' is greater than ' .$num2;
+					}
+					?><br><br>
+					<li>$a >= $b</li>TRUE if $a is greater than or equal to $a.<br>
+					Example:<br>
+					<code>
+					$num1 = 50;<br>
+					$num2 = 15;<br>
+					if ($num1 >= $num2) {<br>
+						echo $num1. ' is greater than ' .$num2;<br>
+						echo $num1. ' is less than ' .$num2;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$num1 = 50;
+					$num2 = 15;
+					if ($num1 >= $num2) {
+						echo $num1. ' is greater than ' .$num2;
+					}else{
+						echo $num1. ' is less than ' .$num2;
+					}
+					?><br><br>
+				</ul>
+			</div>
 			</div><br><hr>
 			<div>
 				<h6>Find the power of number</h6>
