@@ -683,6 +683,48 @@
 					}else{
 						echo 'god know';
 					}
+					?><br><br>
+					<li>switch statement</li>
+					The switch statement is used to perform different actions based on different conditions.<br>
+					Syntax:<br>
+					switch (variable) {<br>
+						case 'value':<br>
+							// code...<br>
+							break;	<br>
+						default:<br>
+							// code...<br>
+					}<br>
+					Example:<br>
+					<code>
+					$favColor = "green";<br>
+					switch ($favColor) {<br>
+						case 'red':<br>
+							echo 'Fav color is red';<br>
+							break;<br>
+						case 'green':<br>
+							echo 'fav color is green';<br>
+							break;<br>
+						case 'blue':<br>
+							echo 'fav color is blue';<br>
+							break;<br>
+						default: echo 'Sorry, did not match color';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$favColor = "green";
+					switch ($favColor) {
+						case 'red':
+							echo 'Fav color is red';
+							break;
+						case 'green':
+							echo 'fav color is green';
+							break;
+						case 'blue':
+							echo 'fav color is blue';
+							break;
+						default: echo 'Sorry, did not match color';
+					}
 					?>
 				</ul>
 			</div><br><hr><br>
