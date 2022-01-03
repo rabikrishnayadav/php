@@ -238,6 +238,31 @@
 					?>
 				</ul>
 			</div>
+			<h4>Single Quotes & Double Quotes</h4>
+			<ul>
+				<li>Single Quotes(' ')</li>
+				The simplest way to specify a string is to enclose it in single quotes.<br>
+				Single quote is generally faster, and everything quoted inside treated as plain string.<br>
+				Examples:<br>
+				<?php
+				$name = 'rabi';
+				echo 'my name is rabi' // this is perfect
+				//eho 'my name is $name' "it's not show the output"
+				// echo 'my name in single quotes \'rabi\' ';	 // like this we can use single quotes 
+				?>
+				<li>Double Quotes(" ")</li>
+				Double quotes allow you to use \n,\r and \t and variables.<br>
+				An important point here is that you can use curly{}braces to isolate the name of the varialbe you want evaluated.<br>
+				Examples:<br>
+				<?php
+				$fname = "rabi";
+				$mname = "krishna";
+				$lname = "yadav";
+				echo "My name is $fname <br>"; // here we can use variable
+				echo "My middle name is '$mname' <br>";
+				echo "my last name is {$lname} ";
+				?>
+			</ul>
 		</div>
 	</body>
 </html>
