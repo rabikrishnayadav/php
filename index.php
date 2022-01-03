@@ -248,7 +248,7 @@
 				$name = 'rabi';
 				echo 'my name is rabi' // this is perfect
 				//eho 'my name is $name' "it's not show the output"
-				// echo 'my name in single quotes \'rabi\' ';	 // like this we can use single quotes 
+						// echo 'my name in single quotes \'rabi\' ';	 // like this we can use single quotes
 				?>
 				<li>Double Quotes(" ")</li>
 				Double quotes allow you to use \n,\r and \t and variables.<br>
@@ -263,6 +263,84 @@
 				echo "my last name is {$lname} ";
 				?>
 			</ul>
+			<br><hr><br>
+			<div>
+				<h4>Conditional Statement</h4>
+				<ul>
+					<li>if statement</li>
+					The if statement executes some code if one condition is true.<br>
+					Example:<br>
+					<code>
+					$day = 'sunday';<br>
+					if ($day =="sunday") {<br>
+					echo 'Today is holiday';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$day = 'sunday';
+					if ($day =="sunday") {
+						echo 'Today is holiday';
+					}
+					?>
+					<br><br>
+					<li>if...else statement</li>
+					The if...else statement executes some code if a condition is true and another code if that condition is false.<br>
+					Example:<br>
+					<code>
+					$day = 'monday';<br>
+					if ($day =="sunday") {<br>
+					echo 'Today is holiday';<br>
+					}else<br>
+					{<br>
+					echo 'Today is not holiday';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$day = 'monday';
+					if ($day =="sunday") {
+						echo 'Today is holiday';
+					}else
+					{
+						echo 'Today is not holiday';
+					}
+					?>
+					<br><br>
+					<li>if...elseif..else statement</li>
+					The if...elseif..else statement executes different codes for more than two conditions.<br>
+					Syntax:<br>
+					if (condition) {<br>
+					// code...<br>
+					}elseif (condition) {<br>
+					// code...<br>
+					}else{<br>
+					// code..<br>
+					}<br>
+					Example:<br>
+					<code>
+					$num = 20;<br>
+					if ($num % 2 == 0) {<br>
+					echo 'Multiples of 2';<br>
+					}elseif ($num % 3 == 0) {<br>
+					echo 'Multiples of 3';<br>
+					}else{<br>
+					echo 'god know';<br>
+					}<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php
+					$num = 20;
+					if ($num % 2 == 0) {
+						echo 'Multiples of 2';
+					}elseif ($num % 3 == 0) {
+						echo 'Multiples of 3';
+					}else{
+						echo 'god know';
+					}
+					?>
+				</ul>
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
