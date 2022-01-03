@@ -169,6 +169,20 @@
 					echo "The Modulus of two Number is: $mod.";
 					?>
 				</ul>
+				<h6>Find the power of number</h6>
+				Example:<br>
+				$base = 5;<br>
+				$power = 2;<br>
+				$powerOfNumber = pow(5,2);<br>
+				echo $powerOfNumber;<br>
+				<kbd>Result:</kbd>
+				<?php
+				$base = 5;
+				$power = 2;
+				$powerOfNumber = pow(5,2);
+				echo $powerOfNumber;
+				?>
+
 			</div>
 		</div>
 	</body>
