@@ -460,8 +460,58 @@
 				<?php
 				$num = 5;
 				echo ($num == 5) ? "Yes, It's equal to {$num}" : "Ooh No, It's not equal to {$num}";
-				?><br><br>
-			</div>
+				?><br>
+			</div><br>
+			<div>
+				<h3>Increment & Decrement Operator</h3>
+				PHP supports C-style pre- and post- increment and decrement operators.
+				<ul>
+					<li>++$a(Pre-increment)</li>Increments $a by one, then return $a.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					echo ++$a;<br>	
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$a = 5;
+					echo ++$a;
+					?><br><br>
+					<li>$a++(Post-increment)</li>Return $a, then increments $a by one.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					echo $a++;<br>	
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$a = 5;
+					echo $a++;
+					?><br><br>
+					<li>--$a(pre-decrement)</li>Decrements $a by one, then return $a.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					echo --$a;<br>	
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$a = 5;
+					echo --$a;
+					?><br><br>
+					<li>$a--(post-decrement)</li>Return $a, then decrement $a by one.<br>
+					Example:<br>
+					<code>
+					$a = 5;<br>
+					echo $a--;<br>	
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$a = 5;
+					echo $a--;
+					?><br><br>
+				</ul>
+			</div><br>
 			</div><br><hr>
 			<div>
 				<h6>Find the power of number</h6>
