@@ -59,12 +59,12 @@
 				<h3>Generate Random Number</h3>
 				Example:<br>
 				<code>
-					$num = rand(0,50);<br>
+				$num = rand(0,50);<br>
 				echo $num;<br>
 				</code><br>
 				<kbd>Result:</kbd>
 				<h2>
-					<?php
+				<?php
 				$num = rand(0,50);
 				echo $num;
 				?>
@@ -79,20 +79,20 @@
 				if a number is a multiple of both 3 and 5 then output FIZZ BUZZ instead of the number.<br>
 				<code>
 				for ($i=1; $i<=20; $i++) { <br>
-					if (($i%3 == 0) && ($i%5 == 0)) {<br>
-						echo "FIZZ BUZZ"; <br>
-					}elseif ($i%3 == 0) {<br>
-						echo "FIZZ"; <br>
-					}elseif ($i%5 == 0){<br>
-						echo "BUZZ"; <br>
-					}else{<br>
-						echo $i.";<br>
-					}<br>
+				if (($i%3 == 0) && ($i%5 == 0)) {<br>
+				echo "FIZZ BUZZ"; <br>
+				}elseif ($i%3 == 0) {<br>
+				echo "FIZZ"; <br>
+				}elseif ($i%5 == 0){<br>
+				echo "BUZZ"; <br>
+				}else{<br>
+				echo $i.";<br>
+				}<br>
 				}	<br>
 				</code><br>
 				<kbd>Result:</kbd><br>
 				<?php
-				for ($i=1; $i<=20; $i++) { 
+				for ($i=1; $i<=20; $i++) {
 					if (($i%3 == 0) && ($i%5 == 0)) {
 						echo "FIZZ BUZZ <br>";
 					}elseif ($i%3 == 0) {
@@ -111,31 +111,31 @@
 				<code>
 				$heads = 0;<br>
 				$tails = 0;<br>
-				for ($i=1; $i < 20; $i++) {<br> 
-					$num = rand(1,2);<br>
-					echo $num;<br>
-					if ($num == 1) {<br>
-						$heads++;<br>
-						echo "Heads, I win!";"</br>
-					}else{<br>
-						$tails++;<br>
-						echo "Tails, You win!";<br>
-					}<br>
+				for ($i=1; $i < 20; $i++) {<br>
+				$num = rand(1,2);<br>
+				echo $num;<br>
+				if ($num == 1) {<br>
+				$heads++;<br>
+				echo "Heads, I win!";"</br>
+				}else{<br>
+				$tails++;<br>
+				echo "Tails, You win!";<br>
+				}<br>
 				}<br>
 				echo " There were {$heads} heads and {$tails} tails." ;<br>
 				if ($heads > $tails) {<br>
-					echo "Heads, I win!";<br>
+				echo "Heads, I win!";<br>
 				}elseif($tails > $heads){<br>
-					echo "Tails, You win!";<br>
+				echo "Tails, You win!";<br>
 				}else{<br>
-					echo "Match DRAW";<br>
+				echo "Match DRAW";<br>
 				}	<br>
 				</code><br>
 				<kbd>Result:</kbd>
 				<?php
 				$heads = 0;
 				$tails = 0;
-				for ($i=1; $i < 20; $i++) { 
+				for ($i=1; $i < 20; $i++) {
 					$num = rand(1,2);
 					echo $num;
 					if ($num == 1) {
@@ -168,7 +168,7 @@
 					echo "The length of the string is ".$length;<br>
 					</code><br>
 					<kbd>Result:</kbd>
-					<?php 
+					<?php
 					$name = 'My name is rabi krishna yadav';
 					$length = strlen($name);
 					echo "The length of the string is ".$length;
@@ -181,7 +181,7 @@
 					echo "The number of words are ".$wordCount;<br>
 					</code><br>
 					<kbd>Result:</kbd>
-					<?php 
+					<?php
 					$name = 'My name is rabi krishna yadav';
 					$wordCount = str_word_count($name);
 					echo "The number of words are ".$wordCount;
@@ -195,7 +195,7 @@
 					echo "My correct name is ".$newName;<br>
 					</code><br>
 					<kbd>Result:</kbd>
-					<?php 
+					<?php
 					$name = 'Rabi Kumar yadav';
 					$newName = str_replace("kumar", "krishna", $name);
 					echo " My correct name is ".$newName;
@@ -209,7 +209,7 @@
 					echo "My correct name is ".$newName;<br>
 					</code><br>
 					<kbd>Result:</kbd>
-					<?php 
+					<?php
 					$name = 'Rabi Kumar yadav';
 					$newName = str_ireplace("kumar", "krishna", $name);
 					echo " My correct name is ".$newName;
@@ -229,14 +229,14 @@
 				A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.<br>
 				Example:<br>
 				<code>
-					// function define
-					function myfun(){<br>
-						echo "My name is Rabi";<br>
-					}<br>
-					myfun(); //function call<br>
-				</code> 
+				// function define
+				function myfun(){<br>
+				echo "My name is Rabi";<br>
+				}<br>
+				myfun(); //function call<br>
+				</code>
 				<kbd>Result:</kbd>
-				<?php 
+				<?php
 				// function define
 				function myfun(){
 						echo "My name is Rabi";
@@ -248,13 +248,13 @@
 				<code>
 				function sum($a, $b) // here $a or $b both are the parameters<br>
 				{<br>
-					$add = $a + $b;<br>
-					echo $add;<br>
+				$add = $a + $b;<br>
+				echo $add;<br>
 				}<br>
-				sum(4,5); // here 4 or 5 both are the arguments<br>	
+				sum(4,5); // here 4 or 5 both are the arguments<br>
 				</code><br>
 				<kbd>Result:</kbd>
-				<?php 
+				<?php
 				function sum($a, $b) // here $a or $b both are the parameters
 				{
 					$add = $a + $b;
@@ -265,14 +265,14 @@
 				<h5>Default value in PHP</h5>
 				Example:<br>
 				<code>
-					function sub($a, $b=5){<br>
-					$sub = $a - $b;<br>
-					echo $sub;
+				function sub($a, $b=5){<br>
+				$sub = $a - $b;<br>
+				echo $sub;
 				}<br>
 				sub(10);<br>
 				</code><br>
 				<kbd>Result:</kbd>
-				<?php 
+				<?php
 				function sub($a, $b=5){
 					$sub = $a - $b;
 					echo $sub;
@@ -282,21 +282,267 @@
 				<h5>Returning Value In Function</h5>
 				Example:<br>
 				<code>
-					function calc($a, $b){<br>
-					$add = $a + $b;<br>
-					return $add;<br>
+				function calc($a, $b){<br>
+				$add = $a + $b;<br>
+				return $add;<br>
 				}<br>
 				$result = calc(5,4); // here is store the calc value<br>
 				echo "The Addition of Two number is ". $result;<br>
 				</code><br>
 				<kbd>Result:</kbd>
-				<?php 
+				<?php
 				function calc($a, $b){
 					$add = $a + $b;
 					return $add;
 				}
 				$result = calc(5,4); // here is store the calc value
 				echo "The Addition of Two number is ". $result;
+				?>
+			</div><br><hr><br>
+			<div>
+				<h3>Array in Php</h3>
+				An array is a special variable, which can hold more than one value at a time.<br>
+				Arrays can be used to store linear data of similar types.<br>
+				In php array() function is used to create an array.<br>
+				Syntax: array();<br>
+				<h5>There are three types of arrays:</h5>
+				1) Indexed arrays :- Arrays with a numeric index<br>
+				2) Associative arrays :- Array with named keys<br>
+				3) Multidimensional arrays :- Arrays contaaining one or more arrays.<br>
+				Example:<br>
+				<code>
+				$friends = array('ram','laxman','bharat','satrudhan');<br>
+				print_r($friends);<br>
+				echo $friends[2];<br>
+				$arrayLength = count($friends);<br>
+				echo "The length of the array is ". $arrayLength;<br>
+				for ($i=0; $i < $arrayLength; $i++) { <br>
+				echo $friends[$i]";<br>
+				}<br>
+				$friends[5] = 'sita';<br>
+				$friends[6] = 'gita';<br>
+				print_r($friends);<br>
+				$friends[5] = 'sita';<br>
+				$friends[6] = 'gita';<br>
+				print_r($friends);<br>
+				</code><br>
+				<kbd>Result:</kbd><br>
+				<?php
+				$friends = array('ram','laxman','bharat','satrudhan');
+				echo "<pre>";
+					print_r($friends);
+				echo "</pre>";
+				echo $friends[2];
+				$arrayLength = count($friends);
+				echo "<br> The length of the array is ". $arrayLength;
+				echo "<ol>";
+							for ($i=0; $i < $arrayLength; $i++) {
+								echo "<li>".$friends[$i]."</li>";
+							}
+				echo "</ol>";
+				$friends[5] = 'sita';
+				$friends[6] = 'gita';
+				echo "<pre>";
+					print_r($friends);
+				echo "</pre>";
+				?><br>
+				<h5>The foreach Loop</h5>
+				The foreach loop - Loops through a block of code for each element in an array.<br>
+				The foreach loop loop works only on arrays, and is used to loop through each key/value pair in an array.<br>
+				Syntax:<br>
+				foreach($array as $value){<br>
+				code to be execute;<br>
+				}<br>
+				Example:<br>
+				<code>
+				$friends = array('ram','laxman','bharat','satrudhan');<br>
+				foreach ($friends as $names) {<br>
+				echo $names;<br>
+				}<br>
+				</code>
+				<kbd>Result:</kbd>
+				<?php
+				$friends = array('ram','laxman','bharat','satrudhan');
+				echo "<ol>";
+							foreach ($friends as $names) {
+								echo "<li>" . $names . "</li>";
+							}
+				echo "</ol>";
+				?><br>
+				<h5>Sort and reverse data</h5>
+				<ul>
+					<li>Sort( )</li>
+					Example:<br>
+					<code>
+					$friends = array('ram','laxman','bharat','satrudhan');<br>
+					sort($friends);<br>
+					foreach ($friends as $names) {<br>
+					echo $names;<br>
+					}<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$friends = array('ram','laxman','bharat','satrudhan');
+					sort($friends);
+					echo "<ol>";
+							foreach ($friends as $names) {
+								echo "<li>" . $names . "</li>";
+							}
+					echo "</ol>";
+					?><br>
+					<li>reverse</li>
+					Example:<br>
+					<code>
+					$friends = array('ram','laxman','bharat','satrudhan');<br>
+					rsort($friends);<br>
+					foreach ($friends as $names) {<br>
+					echo $names;<br>
+					}<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$friends = array('ram','laxman','bharat','satrudhan');
+					rsort($friends);
+					echo "<ol>";
+							foreach ($friends as $names) {
+								echo "<li>" . $names . "</li>";
+							}
+					echo "</ol>";
+					?>
+				</ul><br>
+				<h5>PHP Array Function</h5>
+				<ul>
+					<li>array_pop($arr)</li>This function removes an element from the end of an array.<br>
+					Example:<br>
+					<code>
+					$friends = array('ram','laxman','bharat','satrudhan');<br>
+					print_r($friends);<br>
+					array_pop($friends);<br>
+					print_r($friends);<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$friends = array('ram','laxman','bharat','satrudhan');
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					array_pop($friends);
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					?>
+					<li>array_push($arr, $val)</li>This function adds an element from the end of an array.<br>
+					Example:<br>
+					<code>
+					$friends = array('ram','laxman','bharat','satrudhan');<br>
+					print_r($friends);<br>
+					array_push($friends, 'sita');<br>
+					print_r($friends);<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$friends = array('ram','laxman','bharat','satrudhan');
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					array_push($friends, "sita");
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					?>
+					<li>array_shift($arr)</li>This function removes an element from the begning of an array.<br>
+					Example:<br>
+					<code>
+					$friends = array('ram','laxman','bharat','satrudhan');<br>
+					print_r($friends);<br>
+					array_shift($friends);<br>
+					print_r($friends);<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$friends = array('ram','laxman','bharat','satrudhan');
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					array_shift($friends);
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					?>
+					<li>array_unshift($arr)</li>This function adds an element from the begning of an array.<br>
+					Example:<br>
+					<code>
+					$friends = array('ram','laxman','bharat','satrudhan');<br>
+					print_r($friends);<br>
+					array_unshift($friends,'sita');<br>
+					print_r($friends);<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$friends = array('ram','laxman','bharat','satrudhan');
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					array_unshift($friends, 'sita');
+					echo "<pre>";
+						print_r($friends);
+					echo "</pre>";
+					?>
+				</ul>
+				<h5>Implode and Explode Function</h5>
+				<ul>
+					<li>implode( )</li>This function is used to join elements of an array with a string.<br>
+					The implode function in php is easily remembered as "array to string", which simply means that it takes an array and returns a string.<br>
+					Example:<br>
+					<code>
+					$colors = array('red','green','blue');<br>
+					$res = implode(" ", $colors);<br>
+					echo "My fav Colors are " . $res . ".";<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$colors = array('red','green','blue');
+					$res = implode(" ", $colors);
+					echo "My fav Colors are " . $res . ".";
+					?><br>
+					<li>explode( )</li>This function is used to split a string by a specified string into pieces i.e. it breaks a string into an array.<br>
+					Example:<br>
+					<code>
+					$village_name = "Bardibash Bhangaha Loharpatti";<br>
+					$res = explode(" ", $village_name);<br>
+					print_r($res);<br>
+					</code>
+					<kbd>Result:</kbd>
+					<?php
+					$village_name = "Bardibash Bhangaha Loharpatti";
+					$res = explode(" ", $village_name);
+					echo "<pre>";
+						print_r($res);
+					echo "</pre>";
+					?>
+				</ul>
+				<h5>Combine Two array and remove duplicate</h5>
+				Example:<br>
+				<code>
+				
+				</code>
+				<kbd>Result:</kbd>
+				<?php
+				function arrayUnion($array1, $array2){
+					$merge = array_merge($array1,$array2);
+				echo "Without Remove duplicate <br>";
+				echo "<pre>";
+					print_r($merge);
+				echo "</pre>";
+				$rmdup = array_unique($merge);
+				echo "With Removed duplicate <br>";
+				echo "<pre>";
+					print_r($rmdup);
+				echo "</pre>";
+				}
+				$array1 = array('red', 'green', 'pink');
+				$array2 = array('yellow', 'blue', 'red');
+				arrayUnion($array1, $array2);
 				?>
 			</div><br><hr><br>
 		</div>
