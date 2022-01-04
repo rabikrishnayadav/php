@@ -545,6 +545,80 @@
 				arrayUnion($array1, $array2);
 				?>
 			</div><br><hr><br>
+			<div>
+				<h3>Date and Time Function</h3>
+				<h6>Parameter with description</h6>
+				d - The day of the month(from 01 to 31)<br>
+				D - A textual representation of a day (three letters)<br>
+				j - The day of the month without leading zeros(from 1 to 31)<br>
+				l - A full textual representation of a day<br>
+				N - The ISO-8601 numeric representation of a day(1 for monday, 7 for sunday)<br>
+				S - The english ordial suffix for the day of the month(2 character st, nd, rd or th. Works well with j)<br>
+				w - A numeric representation of the day (0 for Sunday, 6 for Saturday)<br>
+				z - The day of the year (from 0 through 365)<br>
+				W - The ISO-8601 week number of year (weeks starting on Monday)<br>
+				F - A full textual representation of a month( January through December)<br>
+				m - A numeric representation of a month(from 01 to 12)<br>
+				M - A short textual representation of a month(three letters)<br>
+				n - A numric representation of a month, without leading zeros(1 to 12)<br>
+				t- The number of the days in the given month<br>
+				L - Wheather it's a leap year (1 if it is a leap year, 0 otherwise)<br>
+				o - The ISO-8601 year number<br>
+				Y - A four digit representation of a year<br>
+				y - A two digit representation of a year<br>
+				a - Lowercase am or pm<br>
+				A - Uppercase am or pm<br>
+				B - Swatch Internet time(000 to 999)<br>
+				g - 12-hour format of an hour(1 to 12)<br>
+				G - 24-hour format of an hour(0 to 23)<br>
+				h - 12-hour format of an hour(01 to 12)<br>
+				H - 24-hour format of an hour(00 to 23)<br>
+				i - Minutes with leading zeros(00 to 59)<br>
+				s - Second with leading zero(00 to 59)<br>
+				u - Microseconds<br>
+				e - The timezone identifier(Examples: UTC, GMT, Atlantic/Azores)<br>
+				I - Whether the date in daylights saving time(1 if daylight saving time, 0 otherwise)<br>
+				O - Difference to Greenwich time(GMT) in hours(Example: +0100)<br>
+				p - Difference to Greenwich time(GMT) in hoour:minutes<br>
+				T - Timezone abbreviation (Example: EST, MDT)<br>
+				Z - Timezone offset in seconds, The offset for timezones west of UTC is negative(-43200 to 50400)<br>
+				c - The ISO-8601 date(e.g. 2021-12-15T16:34:42+00:00)<br>
+				r - The RFC 2822 formatted date(e.g. Fri, 12 Dec 2021 12:01:05 +0200)<br>
+				U - The seconds since the unix Epoch(January 1 1970 00:00:00 GMT)<br>
+
+				<br>
+				Example:<br>
+				<code>
+				//for getting the current timezone<br>
+				$timezone = date_default_timezone_get();<br>
+				echo "The current server timezone is : ". $timezone;<br>
+				echo date('h:i:sA');<br>
+
+				//for set the new or own timezone<br>
+				$nptimezone = date_default_timezone_set('Asia/Kathmandu');<br>
+				echo "The Nepal Kathmandu server timezone is : ". $nptimezone;<br>
+				echo date('h:i:sA');<br>
+				echo date('d l M');<br>
+				echo date('d F o l e T');<br>
+				echo date('r');<br>
+				</code>
+				<kbd>Result:</kbd><br>
+				<?php 
+				//for getting the current timezone
+				$timezone = date_default_timezone_get();
+				echo "The current server timezone is : ". $timezone ."<br>";
+				echo date('h:i:sA');
+
+				//for set the new or own timezone
+				$nptimezone = date_default_timezone_set('Asia/Kathmandu');
+				echo "<br> The Nepal Kathmandu server timezone is : ". $nptimezone;
+				echo date('h:i:sA'). "<br>";
+				echo date('d l M'). "<br>";
+				echo date('d F o l e T'). "<br>";
+				echo date('r')."<br>";
+				echo date('c')."<br>";
+				?>
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
