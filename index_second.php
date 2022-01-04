@@ -105,6 +105,57 @@
 				}
 				?>
 			</div><br><hr><br>
+			<div>
+				<h3>HEADS, I WIN! TAILS YOU WIN!</h3>
+				Eample:<br>
+				<code>
+				$heads = 0;<br>
+				$tails = 0;<br>
+				for ($i=1; $i < 20; $i++) {<br> 
+					$num = rand(1,2);<br>
+					echo $num;<br>
+					if ($num == 1) {<br>
+						$heads++;<br>
+						echo "Heads, I win!";"</br>
+					}else{<br>
+						$tails++;<br>
+						echo "Tails, You win!";<br>
+					}<br>
+				}<br>
+				echo " There were {$heads} heads and {$tails} tails." ;<br>
+				if ($heads > $tails) {<br>
+					echo "Heads, I win!";<br>
+				}elseif($tails > $heads){<br>
+					echo "Tails, You win!";<br>
+				}else{<br>
+					echo "Match DRAW";<br>
+				}	<br>
+				</code><br>
+				<kbd>Result:</kbd>
+				<?php
+				$heads = 0;
+				$tails = 0;
+				for ($i=1; $i < 20; $i++) { 
+					$num = rand(1,2);
+					echo $num;
+					if ($num == 1) {
+						$heads++;
+						echo "Heads, I win! </br>";
+					}else{
+						$tails++;
+						echo "Tails, You win! <br>";
+					}
+				}
+				echo " There were {$heads} heads and {$tails} tails.<br>" ;
+				if ($heads > $tails) {
+					echo "Heads, I win! <br>";
+				}elseif($tails > $heads){
+					echo "Tails, You win! <br>";
+				}else{
+					echo "Match DRAW";
+				}
+				?>
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
