@@ -754,6 +754,94 @@
 					?>
 				</p>
 			</div><br><hr><br>
+			<div>
+				<h3>Iterative Statement</h3>
+				Iteration literally means repetition of a process.<br>so iterative statements are constructs that help us repeat some statements a defined no of times.<br>
+				The different iterative statements available in php are.
+				<ul>
+					<li>While Loop</li>
+					The while loop-loops through a block of code as long as the specified condition is true.<br>
+					Syntax:<br>
+					while(condition){<br>
+					code to be execute;<br>
+					}<br>
+					Example 1:<br>
+					<code>
+					$i = 1;<br>
+					while ($i <= 10) {<br>
+						echo $i.;<br>
+						$i++;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd><br>
+					<?php
+					$i = 1;
+					while ($i <= 10) {
+						echo $i. "<br>";
+						$i++;
+					}
+					?><br><br>
+					Example 2:<br>
+					<code>
+					$i = 5;<br>
+					$j = 1;<br>
+					while ($i <= 10) {<br>
+						echo "5 * {$j} = {$i}";<br>
+						$i += 5;<br>
+						$j++;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd><br>
+					<?php
+					$i = 5;
+					$j = 1;
+					while ($i <= 50) {
+						echo " 5 * {$j} = {$i} <br>";
+						$i += 5;
+						$j++;
+					}
+					?><br><br>
+					<li>Do While Loop</li>
+					The do..while loop- loops through a block of code once, and then repeats the loop as long as the specified condition is true.<br>
+					Syntax:<br>
+					do {<br>
+						// code...<br>
+					} while (condition);<br>
+					Example:<br>
+					<code>
+					$i = 1;<br>
+					while ($i <= 10) {<br>
+						echo $i.;<br>
+						$i++;<br>
+					}	<br>
+					</code><br>
+					<kbd>Result:</kbd><br>
+					<?php
+					$i = 1;
+					do{
+						echo $i. "<br>";
+						$i++;
+					}while ($i <= 10);
+					?><br><br>
+					<li>For Loop</li>
+					The for loop is used when you know in advance how many times the script should run.<br>
+					Syntax:<br>
+					for ($i=0; $i < ; $i++) {<br> 
+						// code...<br>
+					}<br>
+					Example:<br>
+					<code>
+					for ($i=1; $i <= 10; $i++) {<br> 
+						echo $i.;<br>
+					</code><br>
+					<kbd>Result:</kbd><br>
+					<?php
+					for ($i=1; $i <= 10; $i++) { 
+						echo $i."<br>";
+					}
+					?>
+				</ul>
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
