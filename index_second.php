@@ -219,6 +219,86 @@
 			<div>
 				<h2 align="center">For Calculate the Temperature <a href="temperature.php">Click Here</a></h2>
 			</div><br><hr><br>
+			<div>
+				<h3>PHP Function</h3>
+				Beside the built-in PHP functions, it is possible to create your own functions.<br>
+				A function is block of statement  that can be used repeatedly in a program.<br>
+				A function will not execute automatically ehen a page loads.<br>
+				A function will be execute by a call to the function.<br>
+				Function names follow the same rules as other labels in PHP.<br>
+				A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.<br>
+				Example:<br>
+				<code>
+					// function define
+					function myfun(){<br>
+						echo "My name is Rabi";<br>
+					}<br>
+					myfun(); //function call<br>
+				</code> 
+				<kbd>Result:</kbd>
+				<?php 
+				// function define
+				function myfun(){
+						echo "My name is Rabi";
+					}
+					myfun(); // function call
+				?><br><br>
+				<h5>Parameters and Arguments in Function</h5>
+				Example:<br>
+				<code>
+				function sum($a, $b) // here $a or $b both are the parameters<br>
+				{<br>
+					$add = $a + $b;<br>
+					echo $add;<br>
+				}<br>
+				sum(4,5); // here 4 or 5 both are the arguments<br>	
+				</code><br>
+				<kbd>Result:</kbd>
+				<?php 
+				function sum($a, $b) // here $a or $b both are the parameters
+				{
+					$add = $a + $b;
+					echo $add;
+				}
+				sum(4,5); // here 4 or 5 both are the arguments
+				?><br><br>
+				<h5>Default value in PHP</h5>
+				Example:<br>
+				<code>
+					function sub($a, $b=5){<br>
+					$sub = $a - $b;<br>
+					echo $sub;
+				}<br>
+				sub(10);<br>
+				</code><br>
+				<kbd>Result:</kbd>
+				<?php 
+				function sub($a, $b=5){
+					$sub = $a - $b;
+					echo $sub;
+				}
+				sub(10);
+				?><br><br>
+				<h5>Returning Value In Function</h5>
+				Example:<br>
+				<code>
+					function calc($a, $b){<br>
+					$add = $a + $b;<br>
+					return $add;<br>
+				}<br>
+				$result = calc(5,4); // here is store the calc value<br>
+				echo "The Addition of Two number is ". $result;<br>
+				</code><br>
+				<kbd>Result:</kbd>
+				<?php 
+				function calc($a, $b){
+					$add = $a + $b;
+					return $add;
+				}
+				$result = calc(5,4); // here is store the calc value
+				echo "The Addition of Two number is ". $result;
+				?>
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
