@@ -842,6 +842,21 @@
 					?>
 				</ul>
 			</div><br><hr><br>
-		</div>
+			<h2 align="center">For Second Part <a href="index_second.php">Click Here</a></h2>
+			<input type="button" name="" onclick="myfun()" value="click here" class="btn btn-success">
+			<script type="text/javascript">
+				function myfun(){
+					var user_confirm = confirm("Really you want to study second part of PHP");
+					if (user_confirm == true) {
+						window.open("index_second.php");
+						return true;
+					}else {
+						document.write("you do not want to Learn PHP");
+						return false;
+					}
+				}
+			</script>
+			
+		</div><br><hr><br>
 	</body>
 </html>
