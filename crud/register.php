@@ -27,7 +27,7 @@
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active text-center" id="home" role="tabpane1" aria-labelledby="home-tab" style="padding:50px;">
 					<h3 class="register-heading">Apply for Web Developer Post</h3>
-					<form method="Post">
+					<form action="#" method="Post">
 						<div>
 						<input type="text" name="name" placeholder="enter your name*" class="input1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					    <input type="text" name="degree" placeholder="enter your qualification*" class="input1">
@@ -52,3 +52,35 @@
 </div>
 </body>
 </html>
+
+<?php include 'connection.php'; 
+
+if (isset($_POST['submit'])) {
+	$name = $_POST['name'];
+	$degree = $_POST['degree'];
+	$mobile = $_POST['mobile'];
+	$email = $_POST['email'];
+	$refer = $_POST['refer'];
+	$jobprofile = $_POST['jobpost'];
+
+	$insertquery = "insert into jobregistration(name,degree,mobile,email,refer,jobpost) values('$name','$degree','$mobile','$email','$refer','$jobprofile')";
+
+	$insert_into_db = mysqli_query($connection, $insertquery);
+    if ($insert_into_db) {
+    	?>
+    	<script type="text/javascript">
+    		alert('data inserted properly');
+    	</script>
+    	<?php
+    }else{
+    	?>
+    	<script type="text/javascript">
+    		alert('data not inserted');
+    	</script>
+    	<?php
+    }
+
+}
+
+
+?>
