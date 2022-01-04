@@ -216,6 +216,11 @@
 					?><br><br>
 				</ul>
 			</div><br><hr><br>
+			<div>
+				<h2 align="center">For Calculate the Temperature <a href="temperature.php">Click Here</a></h2>
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
+<div>
+</div>
