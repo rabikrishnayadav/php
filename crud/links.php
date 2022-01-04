@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.min.css">
 <!-- js file addded -->
 
-<script type="text/javascript" src="../js/bootstrap.js" />
-<script type="text/javascript" src="../js/bootstrap.min.js" />
-<script type="text/javascript" src="../js/bootstrap.bundle.js" />
-<script type="text/javascript" src="../js/bootstrap.bundle.min.js" />	
+<script type="text/javascript" src="../js/bootstrap.js" ></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>	
