@@ -5,10 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Simple Calculator</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<style type="text/css">
+			.input1{
+				width: 250px;
+				height: 40px;
+				padding: 5px;
+				outline: none;
+				border-radius: 1px solid gray;
+				border-radius: 5px;
+		</style>
 	</head>
 	<body class="bg-success">
 		<div class="container">
-			<div class="bg-dark m-5 p-5 rounded">
+			<div class="bg-dark m-5 p-5" style="border-radius: 20px; display: flex; flex-direction: column; ">
 				<div class="row">
 					<div class="col-xl-6 font-weight-bold">
 						<div class="app-title">
@@ -22,10 +31,10 @@
 							<div class="app-form">
 								<form method="POST">
 									<div class="app-form-group">
-										<input type="text" name="num1" placeholder="Enter First Number" class="app-form-control">
+										<input type="text" name="num1" placeholder="Enter First Number" class=" input1 app-form-control" autocomplete="off">
 									</div><br>
 									<div class="app-form-group">
-										<input type="text" name="num2" placeholder="Enter Second Number" class="app-form-control">
+										<input type="text" name="num2" placeholder="Enter Second Number" class=" input1 app-form-control" autocomplete="off">
 									</div><br>
 									<div class="select-style">
 										<select name="operation">
@@ -34,7 +43,7 @@
 											<option value="mult">Mult</option>
 											<option value="div">Div</option>
 										</select>
-									</div><br>
+									</div>
 									<div>
 										<input type="submit" name="submit" value="Calculate" class="app-form-button btn btn-success">
 									</div>
