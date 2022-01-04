@@ -55,6 +55,22 @@
 					?><br><br>
 				</ul>
 			</div><br><hr><br>
+			<div>
+				<h3>Generate Random Number</h3>
+				Example:<br>
+				<code>
+					$num = rand(0,50);<br>
+				echo $num;<br>
+				</code><br>
+				<kbd>Result:</kbd>
+				<h2>
+					<?php
+				$num = rand(0,50);
+				echo $num;
+				?>
+				</h2>
+				Just refresh the brower for another number.
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
