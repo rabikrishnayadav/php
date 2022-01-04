@@ -156,6 +156,66 @@
 				}
 				?>
 			</div><br><hr><br>
+			<div>
+				<h3>String Function</h3>
+				<ul>
+					<li>strlen( )</li>The strlen() function returns the length of a string.<br>
+					It's use To find the length of word or sentance<br>
+					Example:<br>
+					<code>
+					$name = 'My name is rabi krishna yadav';<br>
+					$length = strlen($name);<br>
+					echo "The length of the string is ".$length;<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$name = 'My name is rabi krishna yadav';
+					$length = strlen($name);
+					echo "The length of the string is ".$length;
+					?><br><br>
+					<li>str_word_count( )</li> The str_word_count( ) function counts the number of words in a string.<br>
+					Example:<br>
+					<code>
+					$name = 'My name is rabi krishna yadav';<br>
+					$wordCount = str_word_count($name);<br>
+					echo "The number of words are ".$wordCount;<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$name = 'My name is rabi krishna yadav';
+					$wordCount = str_word_count($name);
+					echo "The number of words are ".$wordCount;
+					?><br><br>
+					<li>str_replace( )</li>The str_replace( )function replaces some characters with some other characters in a string.<br>
+					This Finction is case-sensitive.<br>
+					Example:<br>
+					<code>
+					$name = 'Rabi Kumar yadav';<br>
+					$newName = str_replace("kumar", "krishna", $name);<br>
+					echo "My correct name is ".$newName;<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$name = 'Rabi Kumar yadav';
+					$newName = str_replace("kumar", "krishna", $name);
+					echo " My correct name is ".$newName;
+					?><br><br>
+					<li>str_ireplace( )</li>The str_replace( )function replaces some characters with some other characters in a string.<br>
+					This Finction is case-insensitive.<br>
+					Example:<br>
+					<code>
+					$name = 'Rabi Kumar Yadav';<br>
+					$newName = str_ireplace("kumar", "krishna", $name);<br>
+					echo "My correct name is ".$newName;<br>
+					</code><br>
+					<kbd>Result:</kbd>
+					<?php 
+					$name = 'Rabi Kumar yadav';
+					$newName = str_ireplace("kumar", "krishna", $name);
+					echo " My correct name is ".$newName;
+					?><br><br>
+				</ul>
+			</div><br><hr><br>
 		</div>
 	</body>
 </html>
