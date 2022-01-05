@@ -39,7 +39,7 @@
 								<td><?php echo $res['refer']; ?></td>
 								<td><?php echo $res['jobpost']; ?></td>
 								<td class="font-weight-bold"><a href="updates.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="update">edit</a></td>
-								<td class="font-weight-bold"><a href="#" data-toggle="tooltip" data-placement="bottom" title="remove it">delete</a></td>
+								<td class="font-weight-bold"><a href="delete.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="remove it">delete</a></td>
 							</tr>
 							<?php
 							}
