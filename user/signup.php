@@ -17,15 +17,17 @@ session_start();
 			$mobile = mysqli_real_escape_string($connection,$_POST['number']);
 			$password = mysqli_real_escape_string($connection,$_POST['password']);
 			$con_password = mysqli_real_escape_string($connection,$_POST['con_password']);
+			// for secure password from hackers
 			$secure_password = password_hash($password, PASSWORD_BCRYPT);
 			$secure_con_password = password_hash($con_password, PASSWORD_BCRYPT);
+			// for email validation already exits or not.
 			$emailquery = "select * from user_reg where email = '$email' ";
 			$emailquery_db = mysqli_query($connection, $emailquery);
 			$emailcount = mysqli_num_rows($emailquery_db);
 			if ($emailcount >0) {
 				echo 'email already exists';
 			}else{
-				if ($password === $con_password) {
+				if ($password === $con_password) { // for password matching validation
 					
 					$insertquery = "insert into user_reg(name,email,mobile,password,confirm_password) values('$name','$email','$mobile','$secure_password','$secure_con_password')";
 			$insertquery_into_db = mysqli_query($connection, $insertquery);
