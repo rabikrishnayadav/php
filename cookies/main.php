@@ -49,16 +49,30 @@
 			Example 2:
 			<code>
 			setcookie('name', 'Rabi Kr Yadav', time()+86400);
-			</code><br><br>
+			</code><br>
+			Example 3: // for this example scroll below and click on practicle here.<br>
+			<code>
+			setcookie('username', $username, time()+86400);<br>
+			setcookie('age', $age, time()+86400);<br>
+			setcookie('degree', $degree, time()+86400);<br>
+			</code><br>
+			<br>
 			<h6>For Read Cookie</h6>
 			Syntax:
 			<code>
 			$_COOKIE['username'];
 			</code><br>
-			Example:
+			Example 1:
 			<code>
 			echo $_COOKIE['username'];
-			</code><br><br>
+			</code><br>
+			Example 2: // for this example scroll below and click on practicle here.<br>
+			<code>
+			echo "Your name is " .$_COOKIE['username'];<br>
+			echo "Your age is " .$_COOKIE['age'];<br>
+			echo "Your degree is " .$_COOKIE['degree'];<br>
+			</code><br>
+			<br>
 			<h6>For Update Cookie</h6>
 			for Update there is no any variable, for update again we have to use se setcookie and there we will use new value in that cookie and make sure cookie name is same as before created.<br>
 			Example:
@@ -73,7 +87,8 @@
 			Example 2:
 			<code>setcookie('username', null, time()-600); // this is for delete all the cookie which is created or update with username. and it's time is in negative it mean before user visited time it's time is expire.
 			</code><br><br><hr>
-		</div>
+			<h2 class="text-center">For Practicle <a href="form.php">Click here.</a></h2>
+		</div><hr>
 		<h2 class="text-center bg-success">Thanks</h2>
 	</body>
 </html>
