@@ -38,8 +38,8 @@
 								<td><?php echo $res['email']; ?></td>
 								<td><?php echo $res['refer']; ?></td>
 								<td><?php echo $res['jobpost']; ?></td>
-								<td class="font-weight-bold">edit</td>
-								<td class="font-weight-bold">delete</td>
+								<td class="font-weight-bold"><a href="updates.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="update">edit</a></td>
+								<td class="font-weight-bold"><a href="#" data-toggle="tooltip" data-placement="bottom" title="remove it">delete</a></td>
 							</tr>
 							<?php
 							}
@@ -51,5 +51,10 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			$(document.ready(function(){
+				$('[data-toggle-tooltip]').tooltip();
+			}));
+		</script>
 	</body>
 </html>
