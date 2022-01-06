@@ -27,7 +27,7 @@
 				border-top-left-radius: 65px; border-bottom-left-radius: 65px; margin-top:30px;">
 				<div class="tab-content" id="myTabContent">
 					<div class="tab-pane fade show active text-center" id="home" role="tabpane1" aria-labelledby="home-tab" style="padding:50px;">
-						<h3 class="register-heading">Apply for Web Developer Post</h3>
+						<h3>Apply for Web Developer Post</h3>
 						<form action="#" method="Post" onsubmit="return validation()">
 							<div>
 								<input type="text" name="name" placeholder="enter your name*" class="input1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
