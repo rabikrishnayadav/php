@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start(); // for clear the buffer error
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,8 +24,15 @@ session_start();
 				$_SESSION['username'] = $email_fetch['name']; // it will store the user name for show on different place inside the page
 				$veryfied_password = password_verify($password, $db_password); // it will verify password which one user given at login time
 				if ($veryfied_password) {
-					echo "login successful";
-					header('location:home.php');
+					if (isset($_POST['rememberme'])) {
+						setcookie('emailcookie', $email,time()+86400);
+						setcookie('passwordcookie', $password,time()+86400);
+
+						header('location:home.php');
+					}else{
+						header('location:home.php');
+					}
+					
 				}else{
 					echo "Incorrect Password";
 				}
@@ -49,13 +57,16 @@ session_start();
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fa fa-user"></i></span>
 						</div>
-						<input type="email" name="email" class="form-control" placeholder="Email ID" required>
+						<input type="email" name="email" class="form-control" placeholder="Email ID" value="<?php if(isset($_COOKIE['emailcookie'])){echo $_COOKIE['emailcookie'];}; ?>" required>
 					</div>
 					<div class="form-group input-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fa fa-lock"></i></span>
 						</div>
-						<input type="password" name="password" class="form-control" placeholder="Enter password" required>
+						<input type="password" name="password" class="form-control" placeholder="Enter password" value="<?php if(isset($_COOKIE['passwordcookie'])){echo $_COOKIE['passwordcookie'];}; ?>" required>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" name="rememberme"> Remember Me
 					</div>
 					<div class="form-group input-group">
 						<button type="submit" name="submit" class="btn btn-primary btn-block">Login Now</button>
