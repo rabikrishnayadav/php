@@ -22,6 +22,8 @@
 		Existing class is known as base or super class.<br>
 		New Class is known as child or derived class.<br>
 		<li>Constructor</li>
+		It is a special method which gets called at the time of instantiating object.<br>
+		It is used for initialize objects<br>
 		<li>Method Overriding</li>
 		<li>Interface</li>
 		<li>Abstract Class & Method</li>
@@ -74,6 +76,30 @@
 			$sportsCar->name='BMW';<br>
 			$sportsCar->drive();<br>
 			$sportsCar->describe();<br>
+		</code>
+	</div><br><hr><br>
+	<div class="container">
+		<h4>Constructor</h4>
+		Example:<br>
+		<code>
+			// creating a class<br>
+			class Cat{<br>
+				// member of class<br>
+				private $name='';<br>
+				private $color='';<br>
+				// Constructor<br>
+				function __construct($n,$c){<br>
+					$this->name=$n;<br>
+					$this->color=$c;<br>
+				}<br>
+				// method of class<br>
+				public function walk(){<br>
+					echo $this->color. 'cat, '.$this->name. ' is walking';<br>
+				}<br>
+			}<br>
+			// creating object of Cat class<br>
+			$cat = new Cat('Manila','Black'); // Values are passed at the time of instantiation, constructir gets called here<br>
+			$cat->walk();<br>
 		</code>
 	</div><br><hr><br>
 </body>
