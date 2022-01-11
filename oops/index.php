@@ -35,6 +35,15 @@
 		The method are defined in the derived class.<br>
 		'abstract' is keyword used to declare the abstract class.<br>
 		<li>Access Modifiers</li>
+		There are Three Types of Access Modifiers
+		<ol>
+			<li>Public</li>
+			public members can be accessed from anywhere.
+			<li>Private</li>
+			private is not allowed to access from outside the class
+			<li>Protected</li>
+			Similar to private member, not allowed from outside but inherited class can access.
+		</ol>
 	</ul>
 	</div><br><hr><br>
 	<div class="container">
@@ -181,5 +190,59 @@
 			$sc->drive();<br>
 		</code>
 	</div><br><hr><br>
+	<div class="container">
+		<h4>Access Modifiers</h4>
+		By default everything are public
+		<ol>
+			<li>Public</li>
+			Example:<br>
+			<code>
+				// crating a class<br>
+				class Student{<br>
+					// member of class<br>	
+					public $name = '';<br>
+					public function display(){<br>
+						echo 'My name is ' .$this->name;<br>
+					}<br>
+				}<br>
+				// creating a object of class student<br>
+				$carjObj = new Student();<br>
+				$carjObj->name = 'Rabi';<br>
+				$carjObj->display();<br>
+			</code>
+			<li>Private</li>
+			Example:<br>
+			<code>
+				class Students{<br>
+					// member of class<br>	
+					private $mname = '';<br>
+					// method of class<br>
+					private function display(){<br>
+						echo ' My middle name is ' .$this->mname;<br>
+					}<br>
+				}<br>
+				// creating object<br>
+				$carjObj = new Students();<br>
+				$carjObj->mname = 'Krishna';<br>
+				$carjObj->display(); // here you will get an error 'Cannot access private property Students::$mname'. because of mname is private<br>
+			</code>
+			<li>Protected</li>
+			Example:<br>
+			<code>
+				class Std{<br>
+				// member of class<br>
+				protected $lname ='';<br>
+				// method of class<br>
+				protected function display(){<br>
+					echo 'My Last name is ' .$this->lname;<br>
+				}<br>
+				}<br>
+				// creating object<br>
+				$stdObj = new Std();<br>
+				$stdObj->lname = 'Yadav';<br>
+				stdObj->display(); // here also you will get an error 'Cannot access protected property'.<br>
+			</code>
+		</ol>
+	</div><br><hr><br><h1 class="text-center font-weight-bold bg-success">Thanks</h1>
 </body>
 </html>
