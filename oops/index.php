@@ -27,6 +27,8 @@
 		<li>Method Overriding</li>
 		A base method can be overridden in derived i.e. base functionality gets overridden in derived class<br>
 		<li>Interface</li>
+		It is similar to a class but methods are only declared, they don't have any logic mean it's not define the methods.<br>
+		Logic(or definition) is implemened in the class which implements the interface.<br>
 		<li>Abstract Class & Method</li>
 		<li>Access Modifiers</li>
 	</ul>
@@ -129,6 +131,25 @@
 			$nsc->drive();<br>
 			$sc = new SportsCar();<br>
 			$sc->drive();<br>
+		</code>
+	</div><br><hr><br>
+	<div class="container">
+		<h4>Interface</h4>
+		Example:<br>
+		<code>
+			// creating a interface<br>
+			interface Animal{<br>
+				public function walk(); // here is only declare the method<br>
+			}<br>
+			// cteating the class<br>
+			class Dog implements Animal{  // ' implements ' keyword is used to implement the method from the interface.<br>
+				public function walk(){  // logic is implemented here which method already delcare in interface.<br>
+					echo ' walking ';<br>
+				}<br>
+			}<br>
+			// creating a object of class<br>
+			$dog = new Dog();<br>
+			$dog->walk();<br>
 		</code>
 	</div><br><hr><br>
 </body>
