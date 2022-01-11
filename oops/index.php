@@ -18,6 +18,9 @@
 		Object : real world thing properties(data) and show behaviours(methods)<br>
 		Example: car having name and drive behaviour<br>
 		<li>Inheritance</li>
+		Dfn: A Class can be created from an existing class and gets public members from the existing class.<br>
+		Existing class is known as base or super class.<br>
+		New Class is known as child or derived class.<br>
 		<li>Constructor</li>
 		<li>Method Overriding</li>
 		<li>Interface</li>
@@ -43,6 +46,35 @@
 			$carjObj->name='Rabi'; // ' -> ' This is a object operator is used to access members of class<br>
 			$carjObj->drive();<br>
 		</code>
-	</div>
+	</div><br><hr><br>
+	<div class="container">
+		<h4>Inheritance</h4>
+		Example:<br>
+		<code>
+			// Creating New Class it's super(or base) class<br>
+			class Car{<br>
+				// member of class<br>
+				public $name='';<br>
+				//method of class<br>
+				public function drive(){<br>
+					echo 'driving ';}<br>
+			}<br>
+			// SportsCar is derived(or child) class<br>
+			class SportsCar extends Car  // ' extends ' keyword is used to inherit base class members and methods.<br>
+			{<br>
+				// member of class<br>
+				public $maxSpeed = 0; // derived class can have it's own member<br>
+				// method of class<br>
+				public function describe(){<br>
+					echo ' the name of the sports car is '.$this->name; // name is inherited form the super class<br>
+				}<br>
+			}<br>
+			// Creating Object<br>
+			$sportsCar = new SportsCar();<br>
+			$sportsCar->name='BMW';<br>
+			$sportsCar->drive();<br>
+			$sportsCar->describe();<br>
+		</code>
+	</div><br><hr><br>
 </body>
 </html>
