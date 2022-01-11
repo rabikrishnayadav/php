@@ -30,6 +30,10 @@
 		It is similar to a class but methods are only declared, they don't have any logic mean it's not define the methods.<br>
 		Logic(or definition) is implemened in the class which implements the interface.<br>
 		<li>Abstract Class & Method</li>
+		Abstract class<br>
+		A class which has some methods declare only but not defined.<br>
+		The method are defined in the derived class.<br>
+		'abstract' is keyword used to declare the abstract class.<br>
 		<li>Access Modifiers</li>
 	</ul>
 	</div><br><hr><br>
@@ -150,6 +154,31 @@
 			// creating a object of class<br>
 			$dog = new Dog();<br>
 			$dog->walk();<br>
+		</code>
+	</div><br><hr><br>
+	<div class="container">
+		<h4>Abstract class and methods</h4>
+		Example:<br>
+		<code>
+			abstract class Car{<br>
+				// member of class<br>
+				protected $speed = 0;<br>
+				abstract public function set_speed($speed);  // abstract method only declared<br>
+				public function drive(){<br>
+					echo 'driving at '.$this->speed;<br>
+				}<br>
+			}<br>
+			// creating child class<br>
+			class SportsCar extends Car{<br>
+				// implement abstract method<br>
+				public function set_speed($speed){<br>
+					$this->speed = $speed;<br>
+				}<br>
+			}<br>
+			// crating a object<br>
+			$sc = new SportsCar();<br>
+			$sc->set_speed(100);<br>
+			$sc->drive();<br>
 		</code>
 	</div><br><hr><br>
 </body>
